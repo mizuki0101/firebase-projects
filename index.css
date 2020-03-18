@@ -1,0 +1,44 @@
+body {
+  background: #770044;
+}
+
+#board {
+  width: 70%;
+  padding: 10px 0;
+  /* border: 1px solid #333; */
+  border-radius: 0.8em / 0.8em;
+  margin: 0 auto;
+  background: #efefef;
+}
+
+.board-list {
+  margin: 15px 0;
+}
+
+.board-list__upper {
+  font-weight: 600;
+}
+
+.form-area,
+.board-title {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  border-bottom: 1px solid #000;
+}
+
+.message {
+  background-color: white;
+}
+
+.username {
+  font-size: large;
+  margin-right: 40px;
+}
+
+.chat-area {
+  width: 500px;
+}

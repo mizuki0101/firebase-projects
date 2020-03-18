@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <title>board_app</title>
+    <link href="index.css" rel="stylesheet" />
+    <script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+    <script>
+      var firebaseConfig = {
+        apiKey: "AIzaSyDhK6EDW415TN7sNbYUnqjo64nX5GV3OTY",
+        authDomain: "chat-board-7eefb.firebaseapp.com",
+        databaseURL: "https://chat-board-7eefb.firebaseio.com",
+        projectId: "chat-board-7eefb",
+        storageBucket: "chat-board-7eefb.appspot.com",
+        messagingSenderId: "885736783488",
+        appId: "1:885736783488:web:547584514779454e9ef065"
+      };
+      firebase.initializeApp(firebaseConfig);
+    </script>
+  </head>
+  <body>
+    <div id="board">
+      <h2 class="title">ChatBord</h2>
+      <ul class="lists" style="list-style-type: none">
+        <board-list
+          v-for="list in lists"
+          v-bind:name="list.name"
+          v-bind:message="list.message"
+          v-bind:date="list.date"
+        >
+        </board-list>
+      </ul>
+      <div class="message">
+        <board-form v-on:input="doAdd"></board-form>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
