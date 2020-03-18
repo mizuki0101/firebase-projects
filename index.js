@@ -2,7 +2,7 @@ Vue.component("board-list", {
   template: "<li>{{name}} {{date}}</br>{{message}}</li>",
   props: ["name", "message", "date"]
 });
-//うまくいかない
+//gitcommandでの変更
 Vue.component("board-form", {
   template:
     '<div class="form-area"><label class="username">名前 : </label><input v-model="name"> </br>メッセージ: \
